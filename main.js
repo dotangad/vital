@@ -1,6 +1,6 @@
 // Modules to control application life and create native browser window
 const { spawn } = require('child_process')
-const { app, Menu, Tray } = require('electron')
+const { app, Tray } = require('electron')
 const url = 'google.com'
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -9,8 +9,13 @@ let tray
 let ping
 
 function createTrayApp() {
+  // Hide dock icon
+  app.dock.hide()
+
   // Create the browser window.
   tray = new Tray('./images/timeout.png')
+
+  tray.on('double-click', app.quit)
 
   function handleData(data) {
     // Strings only please

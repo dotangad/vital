@@ -1,7 +1,6 @@
 {
-  "name": "reminiscent-fold-dispense",
-  "productName": "reminiscent-fold-dispense",
-  "description": "My Electron application description",
+  "name": "vital",
+  "description": "Simple macos menubar app to show you your ping ms as emoji",
   "keywords": [],
   "main": "./main.js",
   "version": "1.0.0",
