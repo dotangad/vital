@@ -6,10 +6,29 @@
   "version": "1.0.0",
   "author": "dotangad",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder ."
   },
   "dependencies": {},
   "devDependencies": {
-    "electron": "4.0.0-beta.10"
+    "electron": "4.0.0-beta.10",
+    "electron-builder": "^20.39.0"
+  },
+  "build": {
+    "appId": "dev.angad.vital",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    }
   }
 }
