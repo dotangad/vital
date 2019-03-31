@@ -1,0 +1,16 @@
+{
+  "name": "reminiscent-fold-dispense",
+  "productName": "reminiscent-fold-dispense",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "dotangad",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "4.0.0-beta.10"
+  }
+}
